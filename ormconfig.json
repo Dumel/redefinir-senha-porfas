@@ -1,0 +1,24 @@
+{
+    "type": "mysql",
+    "host": "database.azure.com",
+    "port": 3306,
+    "username": "admin_root",
+    "password": "abcdown127_",
+    "database": "abcdown",
+    "synchronize": false,
+    "logging": true,
+    "entities": [
+       "common/entity/**/*.ts"
+    ],
+    "migrations": [
+       "common/migration/**/*.ts"
+    ],
+    "subscribers": [
+       "common/subscriber/**/*.ts"
+    ],
+    "cli": {
+       "entitiesDir": "common/entity",
+       "migrationsDir": "common/migration",
+       "subscribersDir": "common/subscriber"
+    }
+ }
